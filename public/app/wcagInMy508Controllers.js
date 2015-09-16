@@ -13,7 +13,7 @@
             $scope.answer = commonFunctions.answer;
         };
 
-    angular.module('getWithGit')
+    angular.module('wcagInMy508')
            .factory('commonFunctions', function () {
                 return {
                     'answer' : function (value1, value2) {
