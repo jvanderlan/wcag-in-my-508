@@ -1,0 +1,33 @@
+<h1>A Brief Origin of Git {{attempt()}}</h1>
+
+<p>Linux source code was maintained on a commercial version control product called BitKeeper. BitKeeper revoked Linux’s free use so Linus Torvalds wrote his own VCS in April 2005. Version 1 was launched in December of 2005.</p>
+
+<form name="sum">
+    <div class="form-group">
+        <label for="inputOne">Input One</label>
+        <input class="form-control" type="number" data-ng-model="inputOne" id="inputOne" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputTwo">Input Two</label>
+        <input class="form-control" type="number" data-ng-model="inputTwo" id="inputTwo" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputThree">Input Three</label>
+        <input class="form-control" type="number" data-ng-model="inputThree" id="inputThree" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputFour">Input Four</label>
+        <input class="form-control" type="number" data-ng-model="inputFour" id="inputFour" />
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-xs-4">{{answer(inputOne,inputTwo)}}</div>
+    <div class="col-xs-4">{{answer(inputTwo,inputThree)}}</div>
+    <div class="col-xs-4">{{answer(inputThree,inputFour)}}</div>
+</div>
+
+<a ui-sref="what-is-git" class="btn btn-default pull-right">What is Git? &rarr;</a>
