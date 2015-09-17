@@ -108,3 +108,10 @@ main.container > section.slide { width: 960px; }
 
 .not-staged { color: #d43628; }
 .staged { color: #00bd38;}
+
+.list-alphabetic {
+  list-style-type: lower-alpha;
+}
+.list-508 h3 {
+  margin-bottom: 0;
+}

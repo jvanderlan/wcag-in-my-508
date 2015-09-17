@@ -1,0 +1,182 @@
+<h1><small>Case Study:</small> <br />Positive Spin</h1>
+
+<p>Before: <br /><a href="https://positivespin-508-stage.icfwebservices.com">https://positivespin-508-stage.icfwebservices.com</a></p>
+
+<p>After: <br /><a href="https://positivespin.hiv.gov">https://positivespin.hiv.gov</a></p>
+
+<h2>Internal Testing</h2>
+
+<ul>
+    <li>Document language not set for pages or PDF files</li>
+    <li>Visual indication of focus only partially implemented</li>
+    <li>Focused elements sometimes off visual screen</li>
+    <li>Catchpa (when/if implemented) may not be accessible</li>
+    <li>Tab order illogical</li>
+    <li>Some elements on site not usable by only a keyboard
+        <ul>
+            <li>Modal windows</li>
+            <li>Map information</li>
+            <li>Carousel controls</li>
+            <li>Confirm comment button</li>
+        </ul>
+    </li>
+    <li>Videos have no real captions</li>
+    <li>PDF files not Section 508 compliant
+        <ul>
+            <li>Headings</li>
+            <li>Alt text</li>
+            <li>Tab order</li>
+            <li>Language</li>
+            <li>Title</li>
+        </ul>
+    </li>
+    <li>No link to download Acrobat</li>
+</ul>
+
+<h2>HHS/ASPA/DCD 508 Team</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Issue #</th>
+            <th>Issue Title</th>
+            <th>Issue Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RF-1</td>
+            <td>Color Contrast is Insufficient</td>
+            <td>A color-contrast ratio of at least 4.5:1 for text against background, including text in images is not being met. This issue is a violation of 1194.22(c) in Section 508 and Success Criterion 1.4.1 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-2</td>
+            <td>Tab Order Does not Match Visual Order</td>
+            <td>When tabbing through links, the focus does not follow the same order as the visual layout of the page suggests. This issue is a violation of 1194.21 (c) and 1194.22(d) in Section 508 and Success Criterion 2.4.3 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-3</td>
+            <td>Videos are Missing Audio Description</td>
+            <td>The video has no descriptive narrations, meaning the nonspoken elements of the video are inaccessible to users who are blind or have other visual disabilities. Narration is needed to describe significant actions or visual-only information. This issue is a violation of 1194.22(b) in Section 508 and Success Criterions 1.2.3 and 1.2.5 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-4</td>
+            <td>Videos Lack Captioning</td>
+            <td>Captions enabling users to follow the audio portion of the video are missing. This issue is a violation of 1194.22(b) in Section 508 and Success Criterion 1.2.2 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-5</td>
+            <td>Skip Navigation is Missing</td>
+            <td>No method is provided for users to skip past repetitive content. This issue is a violation of 1194.22(o) of Section 508 and of Success Criterion 2.4.1 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-6</td>
+            <td>Frames Lack Title Attributes</td>
+            <td>There are untitled frames, limiting the understandability of the frame and its purpose. This issue is a violation of 1194.22(i) in Section 508 and of Success Criteria 2.4.2 and 4.1.2 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-7</td>
+            <td>Elements are not Accessible by Assistive Technology Elements are present which cannot be viewed or interacted with by Assistive Technology.</td>
+            <td>Examples could include dynamic content, list boxes, or complex page content. This issue is a violation of 1194.22(l) in Section 508 and Success Criterion 4.1.2 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>RF-8</td>
+            <td>Focus is not Shifted to New Content An actionable element on a web page updates or adds new content with no change in URL, and there is no shift of focus to the  new/updated content.</td>
+            <td>This issue is a violation of 1194.21(c) in Section 508 and of 2.4.3 in WCAG 2.0.</td>
+        </tr>
+        <tr>
+            <td>SEF-1</td>
+            <td>Visual Focus Indication is Different for Different Human Interface Devices</td>
+            <td>The visual indication of current program focus appears differently, depending on whether focus is obtained by mouse, keyboard, voice command, or other method. This issue is a violation of WCAG 2.0 Success Criterion 2.4.7.</td>
+        </tr>
+        <tr>
+            <td>SEF-2</td>
+            <td>Modal Dialog does not Hide Underlying Content</td>
+            <td>Virtual Dialog Box appears, but content "underneath" it can still be interacted with. This issue is a violation of WCAG 2.0 Success Criterion 2.4.3.</td>
+        </tr>
+        <tr>
+            <td>SEF-3</td>
+            <td>The State of a Page Element is Missing</td>
+            <td>Elements on the page do not have current state information. State means what condition a particular element is in. For example, a  checkbox can be checked or a tree can be expanded or collapsed. This issue is a violation of WCAG 2.0 Success Criterion 4.1.2.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Issue #</th>
+            <th>Issue Title</th>
+            <th>Issue Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>M1</td>
+            <td>Force focus on H2 tag</td>
+            <td>On page loads, random occurrence of confusion with where the screen reader is active </td>
+        </tr>
+        <tr>
+            <td>M2</td>
+            <td>Wrap additional DIV tag for unordered lists with ARIA: hidden</td>
+            <td>Right side navigation of stage panels</td>
+        </tr>
+        <tr>
+            <td>M3</td>
+            <td>Programmatically read the main home panel navigation prior to the introduction paragraph</td>
+            <td>No tab index 1-2-3</td>
+        </tr>
+        <tr>
+            <td>M4</td>
+            <td>Add clearer text to the video image stills</td>
+            <td>e.g. Play Patrick’s video: description here</td>
+        </tr>
+        <tr>
+            <td>M5</td>
+            <td>Force into HTML5 player video controls</td>
+            <td>*This was already  implemented prior, may be a laptop issue</td>
+        </tr>
+        <tr>
+            <td>M6</td>
+            <td>Add invisible text of ‘go to next stage’</td>
+            <td>Ending hexagon navigation to nest stage of continuum.</td>
+        </tr>
+        <tr>
+            <td>M7</td>
+            <td>Hide navigation when ‘Personal Stories’ tab collapsed</td>
+            <td>DOM element was moved to top</td>
+        </tr>
+        <tr>
+            <td>M8</td>
+            <td>Screen reader shown only text – Use ARIA labels to show which navigation on</td>
+            <td>Items on home navigation – CSS: use ‘Selected or active’ - Provide user with idea of which panel and stage is active</td>
+        </tr>
+        <tr>
+            <td>R1</td>
+            <td>Fire events via ARIA tag with title of category where focus is on</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>R2</td>
+            <td>Remove one item lists</td>
+            <td>Located at video length </td>
+        </tr>
+        <tr>
+            <td>R3</td>
+            <td>ARIA label on landmarks; use logical names that defines it;H3 tags versus Article 1,2,3.</td>
+            <td>Add articles around each portion of content and label where panel starts. Mitigate confusion between page header and page title (e.g. How we Stay in care vs. stay-in-care) Highly recommended to address. </td>
+        </tr>
+        <tr>
+            <td>R4</td>
+            <td>Add ESC key to close video</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>R5</td>
+            <td>Remove redundant ‘same page’ links</td>
+            <td>Push state urls</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><a data-ui-sref="practice" class="btn btn-default pull-right">Practice &rarr;</a></p>

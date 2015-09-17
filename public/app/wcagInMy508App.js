@@ -27,19 +27,27 @@
                     templateUrl : '/app/wcag-two-dot-oh/wcag-two-dot-oh.html'
                 })
 
-                .state("aria", {
-                    url         : '/aria',
-                    templateUrl : '/app/aria/aria.html'
+                .state("testing", {
+                    url         : '/testing',
+                    templateUrl : '/app/testing/testing.html'
+                })
+
+                .state("case-study", {
+                    url         : '/case-study',
+                    templateUrl : '/app/case-study/case-study.html'
                 })
 
                 .state("practice", {
                     url         : '/practice',
-                    templateUrl : '/app/practice/practice.html'
+                    templateUrl : '/app/practice/practice.html',
+                    controller  : function () {
+                        $('.collapse').collapse();
+                    }
                 });
         };
 
     angular.module('wcagInMy508', [
-        'wcagInMy508.criteria',
+        'wcagInMy508.guidelines',
         'ui.router',
         'ngAnimate'
     ])

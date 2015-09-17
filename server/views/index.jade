@@ -1,34 +1,36 @@
 doctype
-html
+html(lang="en")
     head
         link(rel='stylesheet', href='/scripts/bootstrap/dist/css/bootstrap.min.css')
         link(rel='stylesheet', href='/css/global.css')
-    body(ng-app='wcagInMy508')
+        title You got WCAG 2.0 in my 508
+    body(data-ng-app='wcagInMy508')
         nav.navbar.navbar-default.navbar-fixed-top
             div.container
                 div.navbar-header
-                    a(ui-sref="home" class="navbar-brand") You got WCAG in my 508
+                    a(data-ui-sref="home" class="navbar-brand") You got WCAG 2.0 in my 508
                 div
                     ul.nav.navbar-nav
-                        li(ng-class="{active: $state.includes('five-oh-eight')}")
-                            a(ui-sref="five-oh-eight") Quick 508 Recap
-                        li(ng-class="{active: $state.includes('wcag-two-dot-oh')}")
-                            a(ui-sref="wcag-two-dot-oh") WCAG 2.0
-                        li(ng-class="{active: $state.includes('aria')}")
-                            a(ui-sref="aria") ARIA
-                        li(ng-class="{active: $state.includes('criteria')}")
-                            a(ui-sref="criteria.criteria({criteriaName:'contrast'})") Success Criteria
-                        li(ng-class="{active: $state.includes('practice')}")
-                            a(ui-sref="practice") Practice
+                        li(data-ng-class="{active: $state.includes('five-oh-eight')}")
+                            a(data-ui-sref="five-oh-eight") Quick 508 Recap
+                        li(data-ng-class="{active: $state.includes('wcag-two-dot-oh')}")
+                            a(data-ui-sref="wcag-two-dot-oh") WCAG 2.0
+                        li(data-ng-class="{active: $state.includes('guidelines')}")
+                            a(data-ui-sref="guidelines.guideline({guidelineName:'perceivable'})") Guidelines
+                        li(data-ng-class="{active: $state.includes('testing')}")
+                            a(data-ui-sref="testing") Testing
+                        li(data-ng-class="{active: $state.includes('case-study')}")
+                            a(data-ui-sref="case-study") Case Study
+                        li(data-ng-class="{active: $state.includes('practice')}")
+                            a(data-ui-sref="practice") Practice
 
         main.container
             section.slide(ui-view)
 
-
-    script(src='/scripts/jquery/dist/jquery.min.js')
-    script(src='/scripts/bootstrap/dist/js/bootstrap.min.js')
-    script(src='/scripts/angular/angular.js')
-    script(src='/scripts/angular-animate/angular-animate.min.js')
-    script(src='/scripts/angular-ui-router/release/angular-ui-router.min.js')
-    script(src='/app/wcagInMy508App.js')
-    script(src='/app/wcagInMy508Criteria.js')
+        script(src='/scripts/jquery/dist/jquery.min.js')
+        script(src='/scripts/bootstrap/dist/js/bootstrap.min.js')
+        script(src='/scripts/angular/angular.js')
+        script(src='/scripts/angular-animate/angular-animate.min.js')
+        script(src='/scripts/angular-ui-router/release/angular-ui-router.min.js')
+        script(src='/app/wcagInMy508App.js')
+        script(src='/app/wcagInMy508Guidelines.js')

@@ -1,0 +1,24 @@
+<div class="row">
+
+    <aside class="col-xs-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="panel-title">WCAG 2.0 AA Guidelines</h1>
+            </div>
+            <nav class="panel-body">
+            <ol class="nav nav-pills nav-stacked">
+                <li data-ui-sref-active="active"><a data-ui-sref="guidelines.guideline({guidelineName:'perceivable'})">1 Percievable</a></li>
+                <li data-ui-sref-active="active"><a data-ui-sref="guidelines.guideline({guidelineName:'operable'})">2 Operable</a></li>
+                <li data-ui-sref-active="active"><a data-ui-sref="guidelines.guideline({guidelineName:'understandable'})">3 Understandable</a></li>
+                <li data-ui-sref-active="active"><a data-ui-sref="guidelines.guideline({guidelineName:'robust'})">4 Robust</a></li>
+            </ol>
+            </nav>
+        </div>
+    </aside>
+
+    <section class="col-xs-8">
+        <article class="slideVert" ui-view></article>
+    </section>
+</div>
+
+<p><a data-ui-sref="testing" class="btn btn-default pull-right">Testing &rarr;</a></p>
